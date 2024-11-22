@@ -3,7 +3,7 @@
 ## Descrição do Projeto
 O **TáLigado** é uma solução inovadora para promover a eficiência energética e a sustentabilidade ambiental nas empresas. Focando na medição e controle das emissões de gases de efeito estufa, especialmente CO₂, o sistema combina tecnologias de Internet das Coisas (IoT), e visualização de dados em tempo real para oferecer insights e permitir ações corretivas rápidas.
 
-<img src="Imagens\Logo.jpeg" alt="Logo">
+<img src="Imagens\Logo.jpeg" alt="Logo" width="200">
 
 ### Funcionalidades Principais:
 - **Monitoramento em tempo real** do consumo de energia e emissões de CO₂.
