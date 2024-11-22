@@ -47,9 +47,9 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
    - Execute o código para visualizar os resultados no LCD e LEDs.
 
    ### Projeto no Wokwi
-    ![Wokwi](Imagens\wokwi.PNGG)
+   <img src="Imagens\wokwi.PNG" alt="Wokwi">
 
-2. **Node-RED**:
+3. **Node-RED**:
    - Importe o fluxo disponível na pasta `Fluxo/fluxos.json`.
    - Configure os tópicos MQTT para comunicação.
    - Visualize os dados no painel do Node-RED.
@@ -57,13 +57,13 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
    ### Fluxo no Node-RED
     ![Node-RED Flow](Imagens\FluxoNode.PNG)
 
-3. **Execução no Hardware**:
+4. **Execução no Hardware**:
    - Conecte o hardware conforme o esquema.
    - Compile o código no ESP32.
    - Monitore o display LCD e os LEDs para alertas.
 
-4. **Vídeo Demonstrativo**:
+5. **Vídeo Demonstrativo**:
    - Assista o vídeo: [Link do Vídeo](<https://youtu.be/dc5UFIitvjs>).
 
----
+
 
