@@ -1,6 +1,6 @@
 # TáLigado - Monitoramento de Emissões e Consumo Energético com IoT e Machine Learning
 
-## 📋 Descrição do Projeto
+## Descrição do Projeto
 O **TáLigado** é uma solução inovadora para promover a eficiência energética e a sustentabilidade ambiental nas empresas. Focando na medição e controle das emissões de gases de efeito estufa, especialmente CO₂, o sistema combina tecnologias de Internet das Coisas (IoT), e visualização de dados em tempo real para oferecer insights e permitir ações corretivas rápidas.
 
 ### Funcionalidades Principais:
