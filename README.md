@@ -7,7 +7,6 @@ O **TáLigado** é uma solução inovadora para promover a eficiência energéti
 - **Monitoramento em tempo real** do consumo de energia e emissões de CO₂.
 - **Alertas em tempo real** para emissões críticas.
 - **Visualização de dados** através de um **dashboard no Node-RED**.
-- **Geração de relatórios detalhados** para conformidade regulatória e metas de sustentabilidade.
 - **Recomendações personalizadas** para eficiência operacional.
 
 ---
@@ -63,13 +62,15 @@ O sistema utiliza os seguintes tópicos MQTT para coletar e monitorar dados em t
 2. **Node-RED**:
    - Importe o fluxo disponível na pasta Fluxo/fluxos.json.
    - Configure os tópicos MQTT para comunicação.
-   - Configure o **dashboard do Node-RED** com widgets como:
-     - **Gauge**: Para visualização de níveis de perigo e consumo de energia.
-     - **Gráficos**: Para monitoramento histórico em tempo real.
+   - Configure o **dashboard do Node-RED** com nós como:
+     - **Gauge**: Para visualização de níveis de gás, atenção e consumo de energia.
    - Visualize os dados no painel do Node-RED.
 
    ### Fluxo no Node-RED
    <img src="Imagens\FluxoNode.PNG" alt="FluxoNode">
+
+   ### Dashboard
+   <img src="Imagens\dashboard.PNG" alt="Dashboard">
 
 3. **Execução no Hardware**:
    - Conecte o hardware conforme o esquema.
