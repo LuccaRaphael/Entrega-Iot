@@ -1,0 +1,286 @@
+[
+    {
+        "id": "214406708946549a",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "95f8124d82d76166",
+        "type": "mqtt in",
+        "z": "214406708946549a",
+        "name": "",
+        "topic": "gasMonitor/niveis",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c7c9287832c8da6a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "0cc17c8b8f6f5243"
+            ]
+        ]
+    },
+    {
+        "id": "0cc17c8b8f6f5243",
+        "type": "ui_gauge",
+        "z": "214406708946549a",
+        "name": "",
+        "group": "0df3bfa24e19ce13",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Porcentagem de Gás - Perigo",
+        "label": "%",
+        "format": "{{msg.payload.dangerLevel}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0df2b2e5a33238a6",
+        "type": "ui_gauge",
+        "z": "214406708946549a",
+        "name": "",
+        "group": "0df3bfa24e19ce13",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "PPM",
+        "label": "PPM",
+        "format": "{{msg.payload.ppm}}",
+        "min": 0,
+        "max": "3000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f9b7e3d642849a39",
+        "type": "mqtt in",
+        "z": "214406708946549a",
+        "name": "",
+        "topic": "gasMonitor/ppm",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c7c9287832c8da6a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "0df2b2e5a33238a6"
+            ]
+        ]
+    },
+    {
+        "id": "1f464261e823dee5",
+        "type": "mqtt in",
+        "z": "214406708946549a",
+        "name": "",
+        "topic": "energyMonitor/consumo",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c7c9287832c8da6a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 620,
+        "y": 500,
+        "wires": [
+            [
+                "cf06fa0ee8b53dae"
+            ]
+        ]
+    },
+    {
+        "id": "cf06fa0ee8b53dae",
+        "type": "ui_gauge",
+        "z": "214406708946549a",
+        "name": "",
+        "group": "0df3bfa24e19ce13",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "Consumo de Energia",
+        "label": "W",
+        "format": "{{msg.payload.consumption}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "163c51a33805df18",
+        "type": "ui_gauge",
+        "z": "214406708946549a",
+        "name": "",
+        "group": "0df3bfa24e19ce13",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Atenção Ambiental",
+        "label": "%",
+        "format": "{{msg.payload.attentionLevel}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1030,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "030467c4b841a21e",
+        "type": "mqtt in",
+        "z": "214406708946549a",
+        "name": "",
+        "topic": "environmentMonitor/attention",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c7c9287832c8da6a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 660,
+        "y": 600,
+        "wires": [
+            [
+                "163c51a33805df18"
+            ]
+        ]
+    },
+    {
+        "id": "c4cc0af93cc420ca",
+        "type": "ui_spacer",
+        "z": "214406708946549a",
+        "name": "spacer",
+        "group": "0df3bfa24e19ce13",
+        "order": 2,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "1a2f240484f1a493",
+        "type": "ui_spacer",
+        "z": "214406708946549a",
+        "name": "spacer",
+        "group": "0df3bfa24e19ce13",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "414d444e34287232",
+        "type": "ui_spacer",
+        "z": "214406708946549a",
+        "name": "spacer",
+        "group": "0df3bfa24e19ce13",
+        "order": 6,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "c7c9287832c8da6a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0df3bfa24e19ce13",
+        "type": "ui_group",
+        "name": "TáLigado",
+        "tab": "b893296cb2f5f644",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b893296cb2f5f644",
+        "type": "ui_tab",
+        "name": "Dashboard TáLigado",
+        "icon": "Dashboard TáLigado",
+        "disabled": false,
+        "hidden": false
+    }
+]
