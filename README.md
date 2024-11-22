@@ -19,7 +19,7 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
 ## Tecnologias Utilizadas
 - **IoT**: Captura de dados de sensores para medições precisas.
 - **Node-RED**: Fluxos visuais para automação e integração.
-- **Dashboard do Node-RED**: Visualização de dados em tempo real com widgets como **gauge**.
+- **Dashboard do Node-RED**: Visualização de dados em tempo real.
 - **WiFi e MQTT**: Comunicação em tempo real.
 - **LCD e LEDs**: Exibição local de informações e alertas visuais.
 - **Wokwi**: Simulação para testes.
