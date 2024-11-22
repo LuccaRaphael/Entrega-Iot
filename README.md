@@ -6,6 +6,7 @@ O **TáLigado** é uma solução inovadora para promover a eficiência energéti
 ### Funcionalidades Principais:
 - **Monitoramento em tempo real** do consumo de energia e emissões de CO₂.
 - **Alertas em tempo real** para emissões críticas.
+- **Visualização de dados** através de um **dashboard no Node-RED**.
 - **Geração de relatórios detalhados** para conformidade regulatória e metas de sustentabilidade.
 - **Recomendações personalizadas** para eficiência operacional.
 
@@ -19,9 +20,19 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
 ## Tecnologias Utilizadas
 - **IoT**: Captura de dados de sensores para medições precisas.
 - **Node-RED**: Fluxos visuais para automação e integração.
+- **Dashboard do Node-RED**: Visualização de dados em tempo real com widgets como **gauge**.
 - **WiFi e MQTT**: Comunicação em tempo real.
 - **LCD e LEDs**: Exibição local de informações e alertas visuais.
 - **Wokwi**: Simulação para testes.
+
+---
+
+## Tópicos MQTT Monitorados
+O sistema utiliza os seguintes tópicos MQTT para coletar e monitorar dados em tempo real:
+- **`gasMonitor/niveis`**: Nível de perigo (%).
+- **`gasMonitor/ppm`**: Concentração de gás em PPM.
+- **`energyMonitor/consumo`**: Consumo de energia elétrica.
+- **`environmentMonitor/attention`**: Monitoramento de atenção ambiental.
 
 ---
 
@@ -49,21 +60,26 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
    ### Projeto no Wokwi
    <img src="Imagens\wokwi.PNG" alt="Wokwi">
 
-3. **Node-RED**:
-   - Importe o fluxo disponível na pasta `Fluxo/fluxos.json`.
+2. **Node-RED**:
+   - Importe o fluxo disponível na pasta Fluxo/fluxos.json.
    - Configure os tópicos MQTT para comunicação.
+   - Configure o **dashboard do Node-RED** com widgets como:
+     - **Gauge**: Para visualização de níveis de perigo e consumo de energia.
+     - **Gráficos**: Para monitoramento histórico em tempo real.
    - Visualize os dados no painel do Node-RED.
 
    ### Fluxo no Node-RED
    <img src="Imagens\FluxoNode.PNG" alt="FluxoNode">
 
-5. **Execução no Hardware**:
+3. **Execução no Hardware**:
    - Conecte o hardware conforme o esquema.
    - Compile o código no ESP32.
    - Monitore o display LCD e os LEDs para alertas.
 
-6. **Vídeo Demonstrativo**:
+4. **Vídeo Demonstrativo**:
    - Assista o vídeo: [Link do Vídeo](<https://youtu.be/dc5UFIitvjs>).
+
+
 
 
 
