@@ -11,12 +11,12 @@ O **TáLigado** é uma solução inovadora para promover a eficiência energéti
 
 ---
 
-## 📖 Problema Resolvido
+## Problema Resolvido
 Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo de energia e as emissões de dióxido de carbono (CO₂). A ausência de dados em tempo real e ferramentas de análise dificultam identificar padrões de desperdício e atender às regulamentações ambientais. O **TáLigado** resolve esse problema integrando monitoramento avançado e insights preditivos.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **IoT**: Captura de dados de sensores para medições precisas.
 - **Node-RED**: Fluxos visuais para automação e integração.
 - **WiFi e MQTT**: Comunicação em tempo real.
@@ -25,7 +25,7 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
 
 ---
 
-## 🚀 Como Replicar e Testar
+## Como Replicar e Testar
 
 ### Pré-requisitos
 - **Hardware**:
@@ -55,14 +55,14 @@ Empresas enfrentam desafios significativos para monitorar e gerenciar o consumo 
    - Visualize os dados no painel do Node-RED.
 
    ### Fluxo no Node-RED
-    ![Node-RED Flow](Imagens\FluxoNode.PNG)
+   <img src="Imagens\FluxoNode.PNG" alt="FluxoNode">
 
-4. **Execução no Hardware**:
+5. **Execução no Hardware**:
    - Conecte o hardware conforme o esquema.
    - Compile o código no ESP32.
    - Monitore o display LCD e os LEDs para alertas.
 
-5. **Vídeo Demonstrativo**:
+6. **Vídeo Demonstrativo**:
    - Assista o vídeo: [Link do Vídeo](<https://youtu.be/dc5UFIitvjs>).
 
 
