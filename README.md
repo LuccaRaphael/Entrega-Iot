@@ -81,6 +81,7 @@ O sistema utiliza os seguintes tópicos MQTT para coletar e monitorar dados em t
 
 4. **Vídeo Demonstrativo**:
    - Assista o vídeo: [Link do Vídeo](<https://youtu.be/dc5UFIitvjs>).
+   - Pitch do projeto: [Link do Vídeo](<https://youtu.be/Gih1BJ_ZiNk>).
 
 
 
